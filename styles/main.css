@@ -1,0 +1,188 @@
+body{
+    background-color: #cccccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 100%; /* 16px = 100% = 1em */
+    
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/regal.png);
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    
+}
+
+h1{
+    font-family: "Playwrite HR Lijeva", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+h1{
+    font-size: 2.25em; /* 36px / 16px = 2.25em OR 225% */
+}
+
+h2{
+    font-size: 2.125em; /* 34px / 16px = 2.125em */
+}
+
+h3{
+    font-size: 2.125em; /* 32px / 16px = 2em */
+}
+
+/* make images responsive */
+img{
+    max-width: 100%;
+}
+
+.container{
+    background-color: #ffffff;
+    /* width: 1200px; */
+    /* width: 90%; */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+header{
+    background-color: #ffffff;
+    flex: 1 0 100%;
+    height: 100px;
+}
+
+nav{
+    background-color: #cc0c3c;
+    flex: 1 0 100%;
+    
+
+}
+
+ul{
+    /* background-color: aliceblue; */
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+
+li{
+    margin-left: 40px;
+    
+}
+
+/* initial state of button */
+a:link{
+    display: block;
+    /* width: 150px;
+    text-align: center; */ 
+    /* background-color: aqua; */
+    padding: 5px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    /* border-top-left-radius: 5px; */
+}
+
+/* links that have been clicked */
+a:visited{
+    color:#000000;
+}
+
+/* rollover state */
+a:hover{
+    color:#000000;
+    /* background-color:darkmagenta; */
+    text-decoration: underline;
+}
+
+/* when clicked */
+a:active{
+    background-color:crimson;
+}
+
+
+main{
+    background-color:#ffffff;
+    /* width: 800px; */
+    flex: 1 0 40%;
+}
+
+aside{
+    background-color:#f4f4f4;
+    /* width: 400px; */
+    flex: 1 0 60%;
+    margin-top: auto;
+    margin-bottom: 11%;
+}
+
+footer{
+    background-color: #cc0c3c;
+    flex: 1 0 100%;
+    color:#ffffff
+}
+
+/* tablet: if viewport or screen is 800px or less...*/
+@media screen and (max-width: 800px){
+
+    /* body{
+        background-color: yellowgreen;
+    } */
+
+    header{
+        height: 100px;
+    }
+
+    a:link{
+       
+        padding: 10px 20px;
+      
+    }
+
+    main{
+        flex: 1 0 60%;
+    }
+
+    aside{
+        flex: 1 0 40%;
+    }
+
+}
+
+/* mobile: - if viewport or screen is 600px or less...*/
+@media screen and (max-width: 600px){
+    header{
+        height: 50px;
+    }
+
+    /* #nav{
+        display: none;
+    } */
+
+    ul{
+        display: block;
+        text-align: center;
+    }
+
+    main{
+        flex: 1 0 100%;
+    }
+
+    /* #sidebar1{
+        display: none;
+    } */
+
+
+
+
+}
